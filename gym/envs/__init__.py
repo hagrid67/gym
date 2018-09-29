@@ -1,5 +1,15 @@
 from gym.envs.registration import registry, register, make, spec
 
+
+register(
+    id='Prosthetics-v1',
+    entry_point='hagrid.prosthetics.runner:IsolatedEnv',
+    timestep_limit=1e9,
+    max_episode_steps=500,
+    reward_threshold=3000,
+)
+
+
 # Algorithmic
 # ----------------------------------------
 
