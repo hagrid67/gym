@@ -142,6 +142,7 @@ class Env(object):
         Returns:
             gym.Env: The base non-wrapped gym.Env instance
         """
+        #print(self, type(self))
         return self
 
     def __str__(self):
