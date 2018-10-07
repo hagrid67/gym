@@ -5,8 +5,8 @@ register(
     id='Prosthetics-v1',
     entry_point='hagrid.prosthetics.runner:IsolatedEnv',
     timestep_limit=1e9,
-    max_episode_steps=500,
-    reward_threshold=3000,
+    max_episode_steps=1000,
+    reward_threshold=10000,
 )
 
 
